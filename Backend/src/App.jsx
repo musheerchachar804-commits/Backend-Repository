@@ -6,7 +6,7 @@ const App = () => {
   const [data, setData] = useState([]);
   const [num, setNum] = useState("");
 
-  useEffect(() => {
+  useEffect(() => {                                  
     async function getData() {
       const res = await fetch(
         `https://api.github.com/users?per_page=40&since=${num || 0}`
